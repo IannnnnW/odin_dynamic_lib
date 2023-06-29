@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>My Book Library</title>
+</head>
+<body>
+    <div class="container">
+        <h1>My Library</h1>
+        <h1>Listed Books</h1>
+        <div class="card-collection">
+        </div>
+        <button id="btn">Add books</button>
+        <form hidden class="form">
+            <div class="form-partition">
+                <label for="text">Title</label>
+                <input type="text" id="title">
+            </div>
+            <div class="form-partition">
+                <label for="number">Pages</label>
+                <input type="number" id="pages">
+            </div>
+            <div class="form-partition">
+                <label for="text">Author</label>
+                <input type="text" name="author" id="author">
+            </div>
+            <div class="form-partition">
+                <label for="text" id="choice">Have you read it ?</label>
+                <select id="options">
+                    <option value="true">True</option>
+                    <option value="false">False</option>
+                </select>
+                <button id="btn" class="submit">Submit</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
+<script src="app.js"></script>
